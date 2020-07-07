@@ -1,4 +1,3 @@
-require 'dockingstation'
-
-describe 'DockingStation' do
+require 'dockingstation.rb'
+describe DockingStation do
 end
