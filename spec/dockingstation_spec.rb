@@ -9,4 +9,16 @@ describe DockingStation do
         expect(DockingStation.new.release_bike.is_a?(Bike)).to eq true
         expect(DockingStation.new.release_bike.working?).to eq true
     end
+
+    it 'instance of DockingStation responds to dock_bike method' do
+        expect(DockingStation.new.respond_to?:dock_bike).to eq true
+    end
+
+    it 'calling .bikes on DockingStation instance returns number of bikes' do
+        expect(DockingStation.new.bikes).to eq 0
+    end
+
+    it 'passing a bike into dock_bike increases bikes variable by 1' do
+        expect(DockingStation.new.dock_bike(Bike.new)).to eq 1
+    end
 end
