@@ -15,5 +15,5 @@ Objects  | Messages
 ------------- | -------------
 Person  |
 Bike  | working?
-Docking_Station  | release_bike
+DockingStation  | release_bike
 
